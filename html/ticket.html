@@ -1,128 +1,304 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Ticket | Her Economy Summit 2026</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BUY TICKET – The Her Economy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="pledge-form.css" />
 </head>
 <body>
 
-<header class="site-header">
-    <div class="logo">HER <span>Economy</span></div>
-    <div class="mobile-toggle" id="mobileToggle">☰</div>
-    <nav class="nav-menu" id="navMenu">
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT HER ECONOMY</a>
-        <a href="stakeholders.html">STAKEHOLDERS</a>
-        <a href="speakers.html">SPEAKERS</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="ticket.html" class="btn-buy">BUY TICKET</a>
-    </nav>
-</header>
+  <!-- ========== NAVBAR PLACEHOLDER ========== -->
+  <!-- Insert shared navbar component here -->
 
-<section class="hero" style="padding: 60px 20px;">
-    <div class="hero-content">
-        <h1>Secure Your<br>Ticket</h1>
-        <p>Join us at the Women Financial Inclusion Summit 2026</p>
-    </div>
-</section>
+  <main id="main">
 
-<section class="section">
-    <div class="container">
-        <h2 class="section-title">BUY TICKET</h2>
-        
-        <div class="info-grid" style="margin-bottom: 50px;">
-            <div class="info-card">
-                <h3>Ticket Includes</h3>
-                <ul>
-                    <li>Two days of summit programming</li>
-                    <li>Catering and networking</li>
-                    <li>Access to the Gala & Awards evening</li>
-                    <li>Summit materials and delegate bag</li>
-                </ul>
+    <div class="form-wrapper">
+
+      <form class="pledge-form" id="pledgeForm" novalidate>
+
+        <!-- Hidden / honeypot anti-spam -->
+        <div class="frm-honeypot" aria-hidden="true">
+          <label for="hp_field">If you are human, leave this field blank.</label>
+          <input type="text" id="hp_field" name="hp_field" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <!-- ===================================================
+             SECTION 1 – COMPANY
+        ==================================================== -->
+        <section class="form-section">
+          <h3 class="section-title">Company</h3>
+
+          <div class="field-group full">
+            <label for="company_name">Company Name</label>
+            <input type="text" id="company_name" name="company_name" placeholder="Company Name" />
+          </div>
+
+          <div class="field-group full">
+            <label for="country_origin">Country of origin</label>
+            <input type="text" id="country_origin" name="country_origin" placeholder="Country of Origin" />
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="first_name">Name</label>
+              <input type="text" id="first_name" name="first_name" placeholder="Full Name" />
             </div>
-            <div class="info-card">
-                <h3>Pricing</h3>
-                <ul>
-                    <li><strong>Early Bird:</strong> R1,500 (Limited availability)</li>
-                    <li><strong>Standard:</strong> R2,200</li>
-                    <li><strong>VIP (incl. Gala):</strong> R3,800</li>
-                    <li><strong>Group (5+):</strong> Contact us for special rates</li>
-                </ul>
+            <div class="field-group">
+              <label for="surname">Surname</label>
+              <input type="text" id="surname" name="surname" placeholder="Surname" />
             </div>
-            <div class="info-card">
-                <h3>Cancellation Policy</h3>
-                <p>Tickets are non-refundable. Substitutions are allowed up to 7 days before the event.</p>
-                <p>Ticket transfers permitted by notifying organisers in writing at least 7 days prior.</p>
+          </div>
+
+          <div class="field-group full">
+            <label for="designation">Designation</label>
+            <input type="text" id="designation" name="designation" placeholder="Designation" />
+          </div>
+
+          <div class="field-group full">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="email" />
+          </div>
+
+          <div class="field-group full">
+            <label for="mobile_phone">Mobile Phone</label>
+            <input type="tel" id="mobile_phone" name="mobile_phone" placeholder="Mobile Phone" />
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================================================
+             SECTION 2 – INVESTMENT
+        ==================================================== -->
+        <section class="form-section">
+          <h3 class="section-title">Investment</h3>
+
+          <div class="field-group full">
+            <label for="rand_value">Rand Value of Investment</label>
+            <div class="input-group">
+              <span class="input-prefix">R</span>
+              <input
+                type="number"
+                id="rand_value"
+                name="rand_value"
+                placeholder="Rand Value of Investment"
+                min="150000000"
+                max="10000000000"
+                step="any"
+              />
+              <span class="input-suffix">as part of the 2025 Her Economy Announcements.</span>
             </div>
-        </div>
-        
-        <div class="ticket-form">
-            <form id="ticketForm">
-                <div class="form-group">
-                    <label>Full Name *</label>
-                    <input type="text" id="fullname" required>
-                </div>
-                <div class="form-group">
-                    <label>Email Address *</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label>Company / Organisation</label>
-                    <input type="text" id="company">
-                </div>
-                <div class="form-group">
-                    <label>Job Title</label>
-                    <input type="text" id="jobtitle">
-                </div>
-                <div class="form-group">
-                    <label>Ticket Type</label>
-                    <select id="ticketType">
-                        <option value="Early Bird – R1,500">Early Bird – R1,500</option>
-                        <option value="Standard – R2,200">Standard – R2,200</option>
-                        <option value="VIP (incl. Gala) – R3,800">VIP (incl. Gala) – R3,800</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Phone Number</label>
-                    <input type="tel" id="phone">
-                </div>
-                <div class="form-group">
-                    <label>Special Requirements (Dietary, Accessibility)</label>
-                    <textarea rows="3" id="requirements" style="width:100%; padding:12px; border-radius:16px; border:1px solid #ddd;"></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Proceed to Payment (Demo)</button>
-                <p style="font-size: 12px; text-align: center; margin-top: 16px;">*This is a demo form. In a live environment, a secure payment gateway would be integrated.</p>
-            </form>
-            <div id="formMsg" style="margin-top: 18px;"></div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 40px;">
-            <p><strong>Questions?</strong> Contact us at <a href="mailto:info@awfii.org.za" style="color: var(--primary-brown); font-weight: 700;">info@awfii.org.za</a> or call +27 64 526 3312</p>
-        </div>
-    </div>
-</section>
+            <span class="field-hint">(choose between R150,000,000 - R10,000,000,000 (ten billion)</span>
+          </div>
 
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-logos"><h2>HER <span style="color: var(--primary-brown);">Economy</span></h2></div>
-        <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <p><strong>Email:</strong> info@awfii.org.za</p>
-            <p><strong>Phone:</strong> +27 64 526 3312</p>
-        </div>
-        <div class="copyright">
-            <p>Copyright 2026 © The Her Economy</p>
-            <p>Empowering Women Across Africa</p>
-        </div>
-    </div>
-</footer>
+          <div class="field-group full">
+            <label for="location_investment">Location of investment</label>
+            <input
+              type="text"
+              id="location_investment"
+              name="location_investment"
+              placeholder="Location of Investment"
+            />
+            <span class="field-hint">thus, town and municipality where the investment is taking place</span>
+          </div>
 
-<script src="js/main.js"></script>
-<script>
-    initTicketForm('ticketForm', 'formMsg');
-</script>
+          <div class="field-group full">
+            <div class="field-label">Nature of investment (Tick where applicable)</div>
+            <div class="checkbox-group vertical">
+              <label class="checkbox-label">
+                <input type="checkbox" name="nature_investment" value="New (Greenfield)" />
+                New (Greenfield)
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="nature_investment" value="Expansion (Brownfield)" />
+                Expansion (Brownfield)
+              </label>
+            </div>
+          </div>
+
+          <div class="field-group full">
+            <label for="employment">Employment</label>
+            <input
+              type="number"
+              id="employment"
+              name="employment"
+              placeholder="Anticipated number of direct jobs created"
+              min="1"
+              max="5000"
+              step="any"
+            />
+            <span class="field-hint">Anticipated number of direct jobs created</span>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================================================
+             SECTION 3 – ANNOUNCEMENT
+        ==================================================== -->
+        <section class="form-section">
+          <h3 class="section-title">Announcement</h3>
+
+          <div class="field-group full">
+            <div class="field-label">Status</div>
+            <div class="checkbox-group vertical">
+              <label class="checkbox-label">
+                <input type="checkbox" name="status" value="Construction has not started" />
+                Construction has not started
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="status" value="Construction completed" />
+                Construction completed
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="status" value="Operations (production/manufacturing) has not started" />
+                Operations (production/manufacturing) has not started
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="status" value="Operations (production/manufacturing) commenced" />
+                Operations (production/manufacturing) commenced
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="status" value="Other" id="status_other_cb" />
+                Other
+              </label>
+              <input
+                type="text"
+                id="status_other_text"
+                name="status_other_text"
+                class="other-text-input hidden"
+                placeholder="Please specify…"
+              />
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================================================
+             SECTION 4 – DECLARATION (Announcement authorisation)
+        ==================================================== -->
+        <section class="form-section">
+          <h3 class="section-title">Declaration</h3>
+
+          <div class="field-group full">
+            <div class="field-label">Announcement</div>
+            <div class="checkbox-group vertical">
+              <label class="checkbox-label">
+                <input type="checkbox" name="declaration_announcement" value="I authorise the Gauteng Provincial Government to make the news about this investment public." />
+                I authorise the Gauteng Provincial Government to make the news about this investment public.
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="declaration_announcement" value="I am willing to provide media content, like press releases and attend media events about our investment." />
+                I am willing to provide media content, like press releases and attend media events about our investment.
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="declaration_announcement" value="I agree to provide annual non-confidential updates on project progress." />
+                I agree to provide annual non-confidential updates on project progress.
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================================================
+             SECTION 5 – HURDLES
+        ==================================================== -->
+        <section class="form-section">
+          <h3 class="section-title">Hurdles</h3>
+          <p class="section-description">Has the project experienced any of the following delays?</p>
+
+          <div class="field-group full">
+            <div class="checkbox-group vertical">
+              <label class="checkbox-label">
+                <input type="checkbox" name="hurdles" value="Licensing/permitting" />
+                Licensing/permitting
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="hurdles" value="Industry regulations" />
+                Industry regulations
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="hurdles" value="Infrastructure access" />
+                Infrastructure access
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="hurdles" value="Infrastructure condition" />
+                Infrastructure condition
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="hurdles" value="Electricity access" />
+                Electricity access
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="hurdles" value="Water access" />
+                Water access
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="hurdles" value="Other (Please elaborate)" id="hurdles_other_cb" />
+                Other (Please elaborate)
+              </label>
+              <input
+                type="text"
+                id="hurdles_other_text"
+                name="hurdles_other_text"
+                class="other-text-input hidden"
+                placeholder="Please elaborate…"
+              />
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===================================================
+             SECTION 6 – FINAL DECLARATION + DATE
+        ==================================================== -->
+        <section class="form-section">
+          <h3 class="section-title">Declaration</h3>
+
+          <div class="field-group full">
+            <div class="checkbox-group vertical">
+              <label class="checkbox-label">
+                <input type="checkbox" name="final_declaration" value="I hereby declare the above to be true to the best of my knowledge." required />
+                I hereby declare the above to be true to the best of my knowledge.
+              </label>
+            </div>
+          </div>
+
+          <div class="field-group full">
+            <label for="submission_date">Date</label>
+            <input
+              type="date"
+              id="submission_date"
+              name="submission_date"
+            />
+          </div>
+        </section>
+
+        <!-- ===================================================
+             SUBMIT BUTTON
+        ==================================================== -->
+        <div class="form-submit">
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+
+      </form>
+      <!-- /pledge-form -->
+
+    </div>
+    <!-- /form-wrapper -->
+
+  </main>
+
+  <!-- ========== FOOTER PLACEHOLDER ========== -->
+  <!-- Insert shared footer component here -->
+
+  <script src="pledge-form.js"></script>
 </body>
 </html>

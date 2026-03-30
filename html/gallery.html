@@ -1,77 +1,120 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Her Economy Events</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery – The Her Economy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./gallery.css" />
 </head>
 <body>
 
-<header class="site-header">
-    <div class="logo">HER <span>Economy</span></div>
-    <div class="mobile-toggle" id="mobileToggle">☰</div>
-    <nav class="nav-menu" id="navMenu">
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT HER ECONOMY</a>
-        <a href="stakeholders.html">STAKEHOLDERS</a>
-        <a href="speakers.html">SPEAKERS</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="ticket.html" class="btn-buy">BUY TICKET</a>
-    </nav>
-</header>
+  <!-- ========== NAVBAR PLACEHOLDER ========== -->
+  <!-- Insert shared navbar component here -->
 
-<section class="hero" style="padding: 60px 20px;">
-    <div class="hero-content">
-        <h1>Event<br>Gallery</h1>
-        <p>Moments from Her Economy Summit & Celebrations</p>
+  <main id="main">
+
+    <!-- Filter Bar -->
+    <div class="gallery-filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="event">Event</button>
+      <button class="filter-btn" data-filter="networking">Networking &amp; Community</button>
     </div>
-</section>
 
-<section class="section">
-    <div class="container">
-        <h2 class="section-title">Her Economy Event Gallery</h2>
-        <div class="filter-buttons" id="filterButtons">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="event">Event Highlights</button>
-            <button class="filter-btn" data-filter="networking">Networking & Community</button>
-        </div>
-        <div class="gallery-grid" id="galleryContainer"></div>
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+
+      <!-- EVENT -->
+      <div class="gallery-item" data-category="event">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_1.jpg" alt="Her Economy Event" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_3.jpg" alt="Her Economy Event" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_5.jpg" alt="Her Economy Event" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_7.jpg" alt="Her Economy Event" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_9.jpg" alt="Her Economy Event" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event">
+        <img src="../wp-content/uploads/2024/12/resize_w-17.jpg" alt="Her Economy Event" loading="lazy" />
+      </div>
+
+      <!-- NETWORKING -->
+      <div class="gallery-item" data-category="networking">
+        <img src="../wp-content/uploads/2026/02/media__1772171796555.jpg" alt="Networking" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="networking">
+        <img src="../wp-content/uploads/2026/02/media__1772171807284.jpg" alt="Networking" loading="lazy" />
+      </div>
+
+      <!-- MULTI-CATEGORY (event + networking) -->
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/02/media__1772171787558.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2024/12/resize_WO-3.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_2.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2024/12/resize_WO-17-3.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2024/12/resize_WO-2.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2024/12/resize_w-19.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2024/12/resize_w-18.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_4.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_6.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_8.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_10.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_11.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_12.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_13.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+      <div class="gallery-item" data-category="event networking">
+        <img src="../wp-content/uploads/2026/03/her_economy_new_14.jpg" alt="Her Economy" loading="lazy" />
+      </div>
+
     </div>
-</section>
+    <!-- /gallery-grid -->
 
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-logos"><h2>HER <span style="color: var(--primary-brown);">Economy</span></h2></div>
-        <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <p><strong>Email:</strong> info@awfii.org.za</p>
-            <p><strong>Phone:</strong> +27 64 526 3312</p>
-        </div>
-        <div class="copyright">
-            <p>Copyright 2026 © The Her Economy</p>
-            <p>Empowering Women Across Africa</p>
-        </div>
-    </div>
-</footer>
+  </main>
 
-<script src="js/main.js"></script>
-<script>
-    const galleryImages = [
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Keynote+Session", category: "event" },
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Panel+Discussion", category: "event" },
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Networking+Circle", category: "networking" },
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Women+Leaders", category: "event" },
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Gala+Dinner", category: "networking" },
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Community+Impact", category: "networking" },
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Exhibition+Hall", category: "event" },
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Awards+Night", category: "event" },
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Roundtable+Session", category: "event" },
-        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Women+Entrepreneurs", category: "networking" }
-    ];
-    
-    initGallery(galleryImages, 'galleryContainer');
-</script>
+  <!-- ========== FOOTER PLACEHOLDER ========== -->
+  <!-- Insert shared footer component here -->
+
+  <!-- Lightbox Overlay -->
+  <div id="lightbox-overlay" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img id="lightbox-img" src="" alt="Enlarged gallery image" />
+  </div>
+
+  <script src="./gallery.js"></script>
 </body>
 </html>

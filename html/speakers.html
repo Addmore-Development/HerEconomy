@@ -1,83 +1,132 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speakers | Her Economy Summit</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Speakers – The Her Economy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="speakers.css" />
 </head>
 <body>
 
-<header class="site-header">
-    <div class="logo">HER <span>Economy</span></div>
-    <div class="mobile-toggle" id="mobileToggle">☰</div>
-    <nav class="nav-menu" id="navMenu">
-        <a href="index.html">HOME</a>
-        <a href="about.html">ABOUT HER ECONOMY</a>
-        <a href="stakeholders.html">STAKEHOLDERS</a>
-        <a href="speakers.html">SPEAKERS</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="ticket.html" class="btn-buy">BUY TICKET</a>
-    </nav>
-</header>
+  <!-- ========== NAVBAR PLACEHOLDER ========== -->
+  <!-- Insert shared navbar component here -->
 
-<section class="hero" style="padding: 60px 20px;">
-    <div class="hero-content">
-        <h1>Speakers &<br>Panelists</h1>
-        <p>Visionary leaders shaping the future of women's financial inclusion</p>
+  <main id="main">
+
+    <!-- Page Intro -->
+    <div class="speakers-intro">
+      <h2 class="speakers-title">Speakers</h2>
+      <p class="speakers-description">
+        Meet the visionary leaders, industry experts, and policymakers who are shaping the future of
+        Her Economy. Our speakers bring together a wealth of experience from diverse sectors to discuss
+        growth strategies, sustainable investment, and the industrial landscape of the Gauteng City Region.
+      </p>
     </div>
-</section>
 
-<section class="section">
-    <div class="container">
-        <h2 class="section-title">Keynote Speakers</h2>
-        <div class="speakers-grid" id="keynoteSpeakers"></div>
-    </div>
-</section>
+    <!-- ===== Key Note Speakers ===== -->
+    <section class="speakers-section">
+      <h2 class="section-heading">Key Note Speakers</h2>
+      <div class="speakers-grid">
 
-<section class="section section-gray">
-    <div class="container">
-        <h2 class="section-title">Panelists & Industry Experts</h2>
-        <div class="speakers-grid" id="panelSpeakers"></div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-logos"><h2>HER <span style="color: var(--primary-brown);">Economy</span></h2></div>
-        <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <p><strong>Email:</strong> info@awfii.org.za</p>
-            <p><strong>Phone:</strong> +27 64 526 3312</p>
+        <!-- Cards 1–8  (placeholders – replace src and name when data available) -->
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
         </div>
-        <div class="copyright">
-            <p>Copyright 2026 © The Her Economy</p>
-            <p>Empowering Women Across Africa</p>
-        </div>
-    </div>
-</footer>
 
-<script src="js/main.js"></script>
-<script>
-    const keynoteList = [
-        { name: "Dr. Phumzile Mlambo-Ngcuka", title: "Former UN Women Executive Director", img: "https://placehold.co/200x200/FFC425/4E342E?text=Phumzile" },
-        { name: "Nomzamo Radebe", title: "CEO, AWFII", img: "https://placehold.co/200x200/FFC425/4E342E?text=Nomzamo" },
-        { name: "MEC Lebogang Maile", title: "Gauteng Finance & Econ Dev", img: "https://placehold.co/200x200/FFC425/4E342E?text=MEC+Maile" },
-        { name: "Wendy Lucas-Bull", title: "Chairperson, Liberty", img: "https://placehold.co/200x200/FFC425/4E342E?text=Wendy" }
-    ];
-    
-    const panelList = [
-        { name: "Thabo Makgoba", title: "Finance Leader, Standard Bank", img: "https://placehold.co/200x200/FFC425/4E342E?text=Thabo" },
-        { name: "Lindiwe Mazibuko", title: "Entrepreneur & Advocate", img: "https://placehold.co/200x200/FFC425/4E342E?text=Lindiwe" },
-        { name: "Saki Zamxaka", title: "Acting CEO, GGDA", img: "https://placehold.co/200x200/FFC425/4E342E?text=Saki" },
-        { name: "Naledi Pandor", title: "Policy Advisor", img: "https://placehold.co/200x200/FFC425/4E342E?text=Naledi" },
-        { name: "Dr. Martine Davies", title: "Gender Economist", img: "https://placehold.co/200x200/FFC425/4E342E?text=Martine" },
-        { name: "Thuli Madonsela", title: "Prof. of Law, Stellenbosch", img: "https://placehold.co/200x200/FFC425/4E342E?text=Thuli" }
-    ];
-    
-    initSpeakers(keynoteList, 'keynoteSpeakers');
-    initSpeakers(panelList, 'panelSpeakers');
-</script>
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Panelist ===== -->
+    <section class="speakers-section">
+      <h2 class="section-heading">Panelist</h2>
+      <div class="speakers-grid">
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+        <div class="speaker-card">
+          <div class="speaker-photo placeholder"></div>
+          <p class="speaker-name">Name Surname</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER PLACEHOLDER ========== -->
+  <!-- Insert shared footer component here -->
+
 </body>
 </html>
