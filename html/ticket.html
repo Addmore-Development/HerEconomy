@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Ticket | Her Economy Summit 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">HER <span>Economy</span></div>
+    <div class="mobile-toggle" id="mobileToggle">☰</div>
+    <nav class="nav-menu" id="navMenu">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT HER ECONOMY</a>
+        <a href="stakeholders.html">STAKEHOLDERS</a>
+        <a href="speakers.html">SPEAKERS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="ticket.html" class="btn-buy">BUY TICKET</a>
+    </nav>
+</header>
+
+<section class="hero" style="padding: 60px 20px;">
+    <div class="hero-content">
+        <h1>Secure Your<br>Ticket</h1>
+        <p>Join us at the Women Financial Inclusion Summit 2026</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">BUY TICKET</h2>
+        
+        <div class="info-grid" style="margin-bottom: 50px;">
+            <div class="info-card">
+                <h3>Ticket Includes</h3>
+                <ul>
+                    <li>Two days of summit programming</li>
+                    <li>Catering and networking</li>
+                    <li>Access to the Gala & Awards evening</li>
+                    <li>Summit materials and delegate bag</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Pricing</h3>
+                <ul>
+                    <li><strong>Early Bird:</strong> R1,500 (Limited availability)</li>
+                    <li><strong>Standard:</strong> R2,200</li>
+                    <li><strong>VIP (incl. Gala):</strong> R3,800</li>
+                    <li><strong>Group (5+):</strong> Contact us for special rates</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Cancellation Policy</h3>
+                <p>Tickets are non-refundable. Substitutions are allowed up to 7 days before the event.</p>
+                <p>Ticket transfers permitted by notifying organisers in writing at least 7 days prior.</p>
+            </div>
+        </div>
+        
+        <div class="ticket-form">
+            <form id="ticketForm">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Company / Organisation</label>
+                    <input type="text" id="company">
+                </div>
+                <div class="form-group">
+                    <label>Job Title</label>
+                    <input type="text" id="jobtitle">
+                </div>
+                <div class="form-group">
+                    <label>Ticket Type</label>
+                    <select id="ticketType">
+                        <option value="Early Bird – R1,500">Early Bird – R1,500</option>
+                        <option value="Standard – R2,200">Standard – R2,200</option>
+                        <option value="VIP (incl. Gala) – R3,800">VIP (incl. Gala) – R3,800</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="form-group">
+                    <label>Special Requirements (Dietary, Accessibility)</label>
+                    <textarea rows="3" id="requirements" style="width:100%; padding:12px; border-radius:16px; border:1px solid #ddd;"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Proceed to Payment (Demo)</button>
+                <p style="font-size: 12px; text-align: center; margin-top: 16px;">*This is a demo form. In a live environment, a secure payment gateway would be integrated.</p>
+            </form>
+            <div id="formMsg" style="margin-top: 18px;"></div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <p><strong>Questions?</strong> Contact us at <a href="mailto:info@awfii.org.za" style="color: var(--primary-brown); font-weight: 700;">info@awfii.org.za</a> or call +27 64 526 3312</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logos"><h2>HER <span style="color: var(--primary-brown);">Economy</span></h2></div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><strong>Email:</strong> info@awfii.org.za</p>
+            <p><strong>Phone:</strong> +27 64 526 3312</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2026 © The Her Economy</p>
+            <p>Empowering Women Across Africa</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+    initTicketForm('ticketForm', 'formMsg');
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Her Economy Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">HER <span>Economy</span></div>
+    <div class="mobile-toggle" id="mobileToggle">☰</div>
+    <nav class="nav-menu" id="navMenu">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT HER ECONOMY</a>
+        <a href="stakeholders.html">STAKEHOLDERS</a>
+        <a href="speakers.html">SPEAKERS</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="ticket.html" class="btn-buy">BUY TICKET</a>
+    </nav>
+</header>
+
+<section class="hero" style="padding: 60px 20px;">
+    <div class="hero-content">
+        <h1>Event<br>Gallery</h1>
+        <p>Moments from Her Economy Summit & Celebrations</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Her Economy Event Gallery</h2>
+        <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="event">Event Highlights</button>
+            <button class="filter-btn" data-filter="networking">Networking & Community</button>
+        </div>
+        <div class="gallery-grid" id="galleryContainer"></div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logos"><h2>HER <span style="color: var(--primary-brown);">Economy</span></h2></div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><strong>Email:</strong> info@awfii.org.za</p>
+            <p><strong>Phone:</strong> +27 64 526 3312</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2026 © The Her Economy</p>
+            <p>Empowering Women Across Africa</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+    const galleryImages = [
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Keynote+Session", category: "event" },
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Panel+Discussion", category: "event" },
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Networking+Circle", category: "networking" },
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Women+Leaders", category: "event" },
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Gala+Dinner", category: "networking" },
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Community+Impact", category: "networking" },
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Exhibition+Hall", category: "event" },
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Awards+Night", category: "event" },
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Roundtable+Session", category: "event" },
+        { src: "https://placehold.co/500x350/FFC425/4E342E?text=Women+Entrepreneurs", category: "networking" }
+    ];
+    
+    initGallery(galleryImages, 'galleryContainer');
+</script>
+</body>
+</html>
