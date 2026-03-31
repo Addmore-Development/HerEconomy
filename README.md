@@ -14,20 +14,18 @@ HER Economy is an annual Women, Gender and Financial Inclusion summit hosted by 
 ## Project Structure
 ```
 HerEconomy/
-├── index.html # Main homepage
+├── index.html 
 ├── css/
-│ └── style.css # Main stylesheet
+│ └── style.css 
 ├── js/
-│ └── script.js # JavaScript functionality
+│ └── script.js 
 ├── components/
 │ ├── header.html # Reusable header component
 │ └── footer.html # Reusable footer component
-├── images/
-│ ├── 2024/12/
-│ │ └── her-economy-banner.jpeg
-│ └── 2026/03/
-│ ├── her_economy_1.jpg
-│ ├── her_economy_2.jpg
-│ └── her_economy_3.jpg
+├── pages/
+│ ├── about.html
+│ ├── stakeholders.html
+│ ├── speaker.html
+│ └── gallely.html
 
 ```
