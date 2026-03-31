@@ -2,7 +2,7 @@
 
 ![HER Economy Summit Banner](images/2024/12/her-economy-banner.jpeg)
 
-## 📋 Overview
+## Overview
 
 HER Economy is an annual Women, Gender and Financial Inclusion summit hosted by AWFII (African Women Financial Inclusion Initiative), championing African women's financial inclusion. This website serves as the official digital presence for the summit, providing information about the event, agenda, ticketing, and registration.
 
@@ -11,7 +11,7 @@ HER Economy is an annual Women, Gender and Financial Inclusion summit hosted by 
 - **Date:** 21 - 22 May 2026
 - **Venue:** Johannesburg, South Africa
 
-## 📁 Project Structure
+## Project Structure
 ```
 HerEconomy/
 ├── index.html # Main homepage
