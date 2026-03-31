@@ -1,120 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gallery – The Her Economy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./gallery.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Her Economy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <!-- ========== NAVBAR PLACEHOLDER ========== -->
-  <!-- Insert shared navbar component here -->
+    <div id="header-placeholder"></div>
 
-  <main id="main">
+    <main id="main">
+        <div class="gallery-filter">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="event">Event</button>
+            <button data-filter="networking">Networking &amp; Community</button>
+        </div>
 
-    <!-- Filter Bar -->
-    <div class="gallery-filter-bar">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="event">Event</button>
-      <button class="filter-btn" data-filter="networking">Networking &amp; Community</button>
+        <div class="gallery-container" id="galleryGrid">
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_1.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_2.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_3.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_4.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_5.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_6.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_7.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_8.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_9.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_10.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_11.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_12.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_13.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="event"><img src="../images/2026/03/her_economy_new_14.jpg" alt="Her Economy Event" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2026/03/her_economy_1.jpg" alt="Her Economy Networking" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2026/03/her_economy_2.jpg" alt="Her Economy Networking" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2026/03/her_economy_3.jpg" alt="Her Economy Networking" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2024/12/her-economy-slide2.jpg" alt="Her Economy" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2024/12/resize_w-17.jpg" alt="Her Economy" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2024/12/resize_w-18.jpg" alt="Her Economy" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2024/12/resize_w-19.jpg" alt="Her Economy" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2024/12/resize_WO-2.jpg" alt="Her Economy" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2024/12/resize_WO-3.jpg" alt="Her Economy" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2024/12/resize_WO-17-2.jpg" alt="Her Economy" loading="lazy" /></div>
+            <div class="gallery-item" data-category="networking"><img src="../images/2024/12/resize_WO-17-3.jpg" alt="Her Economy" loading="lazy" /></div>
+        </div>
+    </main>
+
+    <div class="lightbox-overlay" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <span class="lightbox-prev" id="lightboxPrev">&#8249;</span>
+        <img src="" alt="Gallery image" id="lightboxImg" />
+        <span class="lightbox-next" id="lightboxNext">&#8250;</span>
     </div>
 
-    <!-- Gallery Grid -->
-    <div class="gallery-grid">
+    <div id="footer-placeholder"></div>
 
-      <!-- EVENT -->
-      <div class="gallery-item" data-category="event">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_1.jpg" alt="Her Economy Event" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_3.jpg" alt="Her Economy Event" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_5.jpg" alt="Her Economy Event" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_7.jpg" alt="Her Economy Event" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_9.jpg" alt="Her Economy Event" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event">
-        <img src="../wp-content/uploads/2024/12/resize_w-17.jpg" alt="Her Economy Event" loading="lazy" />
-      </div>
+    <script src="../js/script.js"></script>
+    <script>
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                setActiveNavLink('gallery.html');
+                initMobileToggle();
+            })
+            .catch(error => console.error('Error loading header:', error));
+        
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
 
-      <!-- NETWORKING -->
-      <div class="gallery-item" data-category="networking">
-        <img src="../wp-content/uploads/2026/02/media__1772171796555.jpg" alt="Networking" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="networking">
-        <img src="../wp-content/uploads/2026/02/media__1772171807284.jpg" alt="Networking" loading="lazy" />
-      </div>
+        // Gallery filter and lightbox functionality
+        const filterBtns = document.querySelectorAll('.gallery-filter button');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxPrev = document.getElementById('lightboxPrev');
+        const lightboxNext = document.getElementById('lightboxNext');
 
-      <!-- MULTI-CATEGORY (event + networking) -->
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/02/media__1772171787558.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2024/12/resize_WO-3.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_2.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2024/12/resize_WO-17-3.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2024/12/resize_WO-2.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2024/12/resize_w-19.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2024/12/resize_w-18.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_4.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_6.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_8.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_10.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_11.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_12.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_13.jpg" alt="Her Economy" loading="lazy" />
-      </div>
-      <div class="gallery-item" data-category="event networking">
-        <img src="../wp-content/uploads/2026/03/her_economy_new_14.jpg" alt="Her Economy" loading="lazy" />
-      </div>
+        let visibleItems = [];
+        let currentIndex = 0;
 
-    </div>
-    <!-- /gallery-grid -->
+        function buildVisible() {
+            visibleItems = Array.from(document.querySelectorAll('.gallery-item:not(.hide)'));
+        }
 
-  </main>
+        function openLightbox(index) {
+            currentIndex = index;
+            const img = visibleItems[currentIndex].querySelector('img');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
 
-  <!-- ========== FOOTER PLACEHOLDER ========== -->
-  <!-- Insert shared footer component here -->
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            document.body.style.overflow = '';
+        }
 
-  <!-- Lightbox Overlay -->
-  <div id="lightbox-overlay" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image lightbox">
-    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">&times;</button>
-    <img id="lightbox-img" src="" alt="Enlarged gallery image" />
-  </div>
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+            lightboxImg.src = visibleItems[currentIndex].querySelector('img').src;
+        }
 
-  <script src="./gallery.js"></script>
+        function showNext() {
+            currentIndex = (currentIndex + 1) % visibleItems.length;
+            lightboxImg.src = visibleItems[currentIndex].querySelector('img').src;
+        }
+
+        if (filterBtns.length) {
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.getAttribute('data-filter');
+                    galleryItems.forEach(item => {
+                        const cat = item.getAttribute('data-category');
+                        if (filter === 'all' || cat === filter) {
+                            item.classList.remove('hide');
+                        } else {
+                            item.classList.add('hide');
+                        }
+                    });
+                    buildVisible();
+                });
+            });
+        }
+
+        if (galleryItems.length) {
+            galleryItems.forEach((item) => {
+                item.addEventListener('click', () => {
+                    buildVisible();
+                    const visIdx = visibleItems.indexOf(item);
+                    if (visIdx >= 0) openLightbox(visIdx);
+                });
+            });
+        }
+
+        if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+        if (lightboxPrev) lightboxPrev.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+        if (lightboxNext) lightboxNext.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+        if (lightbox) lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox?.classList.contains('open')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') showPrev();
+            if (e.key === 'ArrowRight') showNext();
+        });
+
+        buildVisible();
+    </script>
 </body>
 </html>

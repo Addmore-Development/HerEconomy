@@ -1,132 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Speakers – The Her Economy</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="speakers.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers | Her Economy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <!-- ========== NAVBAR PLACEHOLDER ========== -->
-  <!-- Insert shared navbar component here -->
-
-  <main id="main">
-
-    <!-- Page Intro -->
-    <div class="speakers-intro">
-      <h2 class="speakers-title">Speakers</h2>
-      <p class="speakers-description">
-        Meet the visionary leaders, industry experts, and policymakers who are shaping the future of
-        Her Economy. Our speakers bring together a wealth of experience from diverse sectors to discuss
-        growth strategies, sustainable investment, and the industrial landscape of the Gauteng City Region.
-      </p>
+    <div class="video-bg-wrapper">
+        <video playsinline autoplay muted loop id="bgVideo">
+            <source src="../images/2025/03/MEC-at-AIDC-roundtable.mp4" type="video/mp4">
+        </video>
     </div>
 
-    <!-- ===== Key Note Speakers ===== -->
-    <section class="speakers-section">
-      <h2 class="section-heading">Key Note Speakers</h2>
-      <div class="speakers-grid">
+    <div id="header-placeholder"></div>
 
-        <!-- Cards 1–8  (placeholders – replace src and name when data available) -->
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
+    <main id="main">
+        <section class="speakers-section">
+            <div class="speakers-intro">
+                <h2>Speakers</h2>
+                <p>Meet the visionary leaders, industry experts, and policymakers who are shaping the future of
+                Her Economy. Our speakers bring together a wealth of experience from diverse sectors to discuss
+                growth strategies, sustainable investment, and the industrial landscape of the Gauteng City Region.</p>
+            </div>
+            <h2 class="section-heading">Key Note Speakers</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+            </div>
+        </section>
 
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
+        <section class="speakers-section">
+            <h2 class="section-heading">Panelist</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+            </div>
+        </section>
+    </main>
 
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
+    <div id="footer-placeholder"></div>
 
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
+    <script src="../js/script.js"></script>
+    <script>
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                setActiveNavLink('speakers.html');
+                initMobileToggle();
+            })
+            .catch(error => console.error('Error loading header:', error));
+        
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
 
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===== Panelist ===== -->
-    <section class="speakers-section">
-      <h2 class="section-heading">Panelist</h2>
-      <div class="speakers-grid">
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-        <div class="speaker-card">
-          <div class="speaker-photo placeholder"></div>
-          <p class="speaker-name">Name Surname</p>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ========== FOOTER PLACEHOLDER ========== -->
-  <!-- Insert shared footer component here -->
-
+        // Ensure video plays
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('bgVideo');
+            if (video) {
+                video.play().catch(() => {
+                    console.warn('Background video autoplay was prevented.');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
