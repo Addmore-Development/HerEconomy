@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -10,7 +9,20 @@
 </head>
 <body>
 
-    <div id="header-placeholder"></div>
+    <header class="site-header">
+        <a href="../index.html" class="header-logo-link">
+            <img src="../images/2026/02/her-economy-logo-new.png" alt="The Her Economy" />
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="../index.html">HOME</a>
+            <a href="about.html">ABOUT HER ECONOMY</a>
+            <a href="stakeholders.html">STAKEHOLDERS</a>
+            <a href="speakers.html">SPEAKERS</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="ticket.html" class="btn-buy active">BUY TICKET</a>
+        </nav>
+    </header>
 
     <main id="main">
         <div class="form-outer">
@@ -66,48 +78,23 @@
         </div>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a href="../index.html" class="footer-logo-link">
+                <img src="../images/2026/02/her-economy-logo-new.png" alt="Her Economy Logo" />
+            </a>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> info@awfii.org.za</p>
+                <p><strong>Phone:</strong> +27 64 526 3312</p>
+            </div>
+            <div class="footer-copy">
+                <p class="copy-main">Copyright 2026 &copy; The Her Economy</p>
+                <p class="copy-sub">Empowering Women Across Africa</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="../js/script.js"></script>
-    <script>
-        fetch('../components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-                setActiveNavLink('ticket.html');
-                initMobileToggle();
-            })
-            .catch(error => console.error('Error loading header:', error));
-        
-        fetch('../components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
-
-        // Form submit
-        const ticketForm = document.getElementById('ticketForm');
-        if (ticketForm) {
-            ticketForm.addEventListener('submit', function (e) {
-                e.preventDefault();
-                const required = this.querySelectorAll('input[required]');
-                let valid = true;
-                required.forEach(field => {
-                    if (field.type === 'checkbox') {
-                        if (!field.checked) { valid = false; field.closest('.checkbox-label').style.color = '#F04438'; }
-                        else { field.closest('.checkbox-label').style.color = ''; }
-                    } else {
-                        if (!field.value.trim()) { valid = false; field.style.borderColor = '#F04438'; }
-                        else { field.style.borderColor = ''; }
-                    }
-                });
-                if (!valid) { alert('Please fill in all required fields.'); return; }
-                this.style.display = 'none';
-                document.getElementById('formSuccess').style.display = 'block';
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        }
-    </script>
 </body>
 </html>

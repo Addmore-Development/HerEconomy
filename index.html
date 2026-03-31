@@ -10,7 +10,20 @@
 </head>
 <body>
 
-    <div id="header-placeholder"></div>
+    <header class="site-header">
+        <a href="index.html" class="header-logo-link">
+            <img src="images/2026/02/her-economy-logo-new.png" alt="The Her Economy" />
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="active">HOME</a>
+            <a href="pages/about.html">ABOUT HER ECONOMY</a>
+            <a href="pages/stakeholders.html">STAKEHOLDERS</a>
+            <a href="pages/speakers.html">SPEAKERS</a>
+            <a href="pages/gallery.html">GALLERY</a>
+            <a href="pages/ticket.html" class="btn-buy">BUY TICKET</a>
+        </nav>
+    </header>
 
     <section class="hero">
         <div class="event-image-slider">
@@ -99,75 +112,23 @@
         </div>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a href="index.html" class="footer-logo-link">
+                <img src="images/2026/02/her-economy-logo-new.png" alt="Her Economy Logo" />
+            </a>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> info@awfii.org.za</p>
+                <p><strong>Phone:</strong> +27 64 526 3312</p>
+            </div>
+            <div class="footer-copy">
+                <p class="copy-main">Copyright 2026 &copy; The Her Economy</p>
+                <p class="copy-sub">Empowering Women Across Africa</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
-    <script>
-        // ============================================================
-        // COUNTDOWN TIMER - Countdown to May 21, 2026
-        // ============================================================
-        (function() {
-            // Target date: May 21, 2026 at 00:00:00 (local time)
-            // Month is 0-indexed in JavaScript, so 4 = May
-            const targetDate = new Date(2026, 4, 21, 0, 0, 0);
-            
-            // Get DOM elements
-            const daysElement = document.getElementById('days');
-            const hoursElement = document.getElementById('hours');
-            const minutesElement = document.getElementById('minutes');
-            const secondsElement = document.getElementById('seconds');
-            
-            // Function to update the countdown display
-            function updateCountdown() {
-                const now = new Date();
-                const timeRemaining = targetDate - now;
-                
-                // If the event date has passed, show zeros
-                if (timeRemaining <= 0) {
-                    daysElement.textContent = '00';
-                    hoursElement.textContent = '00';
-                    minutesElement.textContent = '00';
-                    secondsElement.textContent = '00';
-                    return;
-                }
-                
-                // Calculate days, hours, minutes, seconds
-                const totalSeconds = Math.floor(timeRemaining / 1000);
-                const days = Math.floor(totalSeconds / 86400);
-                const hours = Math.floor((totalSeconds % 86400) / 3600);
-                const minutes = Math.floor((totalSeconds % 3600) / 60);
-                const seconds = totalSeconds % 60;
-                
-                // Update DOM with leading zeros
-                daysElement.textContent = days < 10 ? '0' + days : days.toString();
-                hoursElement.textContent = hours < 10 ? '0' + hours : hours.toString();
-                minutesElement.textContent = minutes < 10 ? '0' + minutes : minutes.toString();
-                secondsElement.textContent = seconds < 10 ? '0' + seconds : seconds.toString();
-            }
-            
-            // Initial update
-            updateCountdown();
-            
-            // Update every second
-            setInterval(updateCountdown, 1000);
-        })();
-        
-        // Load header and footer
-        fetch('components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-                setActiveNavLink('index.html');
-                initMobileToggle();
-            })
-            .catch(error => console.error('Error loading header:', error));
-        
-        fetch('components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
-    </script>
 </body>
 </html>

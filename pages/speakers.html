@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -16,7 +15,20 @@
         </video>
     </div>
 
-    <div id="header-placeholder"></div>
+    <header class="site-header">
+        <a href="../index.html" class="header-logo-link">
+            <img src="../images/2026/02/her-economy-logo-new.png" alt="The Her Economy" />
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+        <nav class="nav-menu" id="navMenu">
+            <a href="../index.html">HOME</a>
+            <a href="about.html">ABOUT HER ECONOMY</a>
+            <a href="stakeholders.html">STAKEHOLDERS</a>
+            <a href="speakers.html" class="active">SPEAKERS</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="ticket.html" class="btn-buy">BUY TICKET</a>
+        </nav>
+    </header>
 
     <main id="main">
         <section class="speakers-section">
@@ -54,35 +66,23 @@
         </section>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a href="../index.html" class="footer-logo-link">
+                <img src="../images/2026/02/her-economy-logo-new.png" alt="Her Economy Logo" />
+            </a>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Email:</strong> info@awfii.org.za</p>
+                <p><strong>Phone:</strong> +27 64 526 3312</p>
+            </div>
+            <div class="footer-copy">
+                <p class="copy-main">Copyright 2026 &copy; The Her Economy</p>
+                <p class="copy-sub">Empowering Women Across Africa</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="../js/script.js"></script>
-    <script>
-        fetch('../components/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-                setActiveNavLink('speakers.html');
-                initMobileToggle();
-            })
-            .catch(error => console.error('Error loading header:', error));
-        
-        fetch('../components/footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
-
-        // Ensure video plays
-        document.addEventListener('DOMContentLoaded', () => {
-            const video = document.getElementById('bgVideo');
-            if (video) {
-                video.play().catch(() => {
-                    console.warn('Background video autoplay was prevented.');
-                });
-            }
-        });
-    </script>
 </body>
 </html>
