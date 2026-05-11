@@ -35,7 +35,33 @@
         <div class="content-card">
             <h2 class="section-title">Event Description</h2>
             <div class="event-description">
-                <p><strong>HER Economy</strong> is an annual Women, Gender and Financial Inclusion summit established in 2023. Now hosted by the <strong>Africa Women Financial Inclusion Initiative (AWFII)</strong>, in partnership with the Graça Machel Trust's New Faces New Voices (South African Chapter), the convening provides a high-level platform to address the persistent gender financial gap.</p>
+
+                <div class="desc-block">
+                    <h3 class="desc-block-title">Background and Rationale</h3>
+                    <p><strong>HER Economy</strong> is an annual high-level Women, Gender and Financial Inclusion summit launched in 2023 to advance systemic solutions to women's economic exclusion. The convening focuses on transforming financial systems to enable women's meaningful participation, leadership, and ownership in economic life.</p>
+                    <p>Previously hosted by DEI&amp;B (Pty) Ltd, HER Economy is now convened by the <strong>Africa Women Financial Inclusion Initiative (AWFII)</strong>, in partnership with the Graça Machel Trust's New Faces New Voices (South Africa Chapter).</p>
+                    <p>While access to finance for women has improved in recent years, women remain significantly underrepresented as owners, issuers, investors, and decision-makers within capital markets. Structural barriers — including market access, product design, governance norms, and participation in asset ownership — continue to limit women's ability to benefit fully from capital market systems.</p>
+                    <p>HER Economy was established to convene senior stakeholders across policy, finance, investment, and markets to address these challenges at a systems and market architecture level.</p>
+                </div>
+
+                <div class="desc-pillars">
+                    <div class="pillar-item">
+                        <span class="pillar-icon">🏛️</span>
+                        <strong>Systems Change</strong>
+                        <p>Transforming financial systems at policy and market architecture level</p>
+                    </div>
+                    <div class="pillar-item">
+                        <span class="pillar-icon">🤝</span>
+                        <strong>Strategic Partnerships</strong>
+                        <p>Mobilising capital commitments and cross-sector collaboration</p>
+                    </div>
+                    <div class="pillar-item">
+                        <span class="pillar-icon">🌍</span>
+                        <strong>African Leadership</strong>
+                        <p>Positioning Africa as a leader in women's financial inclusion</p>
+                    </div>
+                </div>
+
                 <p><strong>HER Economy 2026</strong> will convene senior policymakers, regulators, development finance institutions, investors, financial institutions, corporates, and women leaders to advance women-centred financial infrastructure, mobilise partnerships and capital commitments, and position Africa as a leader in women's financial inclusion systems.</p>
                 <p>The programme includes strategic plenaries, closed-door roundtables, evidence and innovation showcases, and a <strong>Gala &amp; Awards evening</strong> recognising leadership reshaping the architecture of ownership.</p>
             </div>
@@ -97,7 +123,7 @@
             </div>
 
             <h2 class="section-title" style="margin-top:70px;">Be Part of the Movement</h2>
-            <p class="body-text" style="text-align:center; max-width:800px; margin: 20px auto 0;">Her Economy 2025 is where financial inclusion meets action. Whether you're a corporate leader, entrepreneur, policymaker, or advocate, there's a place for you in this conversation.</p>
+            <p class="body-text" style="text-align:center; max-width:800px; margin: 20px auto 0;">Her Economy 2026 is where financial inclusion meets action. Whether you're a corporate leader, entrepreneur, policymaker, or advocate, there's a place for you in this conversation.</p>
 
             <div class="cta-box">
                 <div class="cta-box-inner">
@@ -115,7 +141,7 @@
             </ul>
 
             <h3 class="sub-title" style="margin-top:36px;">Who Can Attend?</h3>
-            <p class="body-text">Her Economy 2025 is where financial inclusion meets action. Whether you're a corporate leader, entrepreneur, policymaker, or advocate, there's a place for you in this conversation.</p>
+            <p class="body-text">Her Economy 2026 is where financial inclusion meets action. Whether you're a corporate leader, entrepreneur, policymaker, or advocate, there's a place for you in this conversation.</p>
             <ul>
                 <li>Women Entrepreneurs and Business Leaders</li>
                 <li>Young Professionals and Aspiring Business Owners</li>
@@ -178,5 +204,61 @@
     </footer>
 
     <script src="../js/script.js"></script>
+
+    <style>
+        /* ── About page: description block title ── */
+        .desc-block {
+            background: #fdf8f0;
+            border-left: 5px solid var(--primary-yellow);
+            border-radius: 0 10px 10px 0;
+            padding: 28px 32px;
+            margin-bottom: 32px;
+        }
+        .desc-block-title {
+            color: var(--primary-brown);
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .desc-block p { margin-bottom: 14px; }
+        .desc-block p:last-child { margin-bottom: 0; }
+
+        /* ── Three pillar icons row ── */
+        .desc-pillars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 28px 0 32px;
+        }
+        .pillar-item {
+            background: #fff;
+            border: 1.5px solid #f0e8d8;
+            border-radius: 12px;
+            padding: 22px 20px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(78,52,46,0.07);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+        .pillar-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 28px rgba(78,52,46,0.13);
+        }
+        .pillar-icon { font-size: 2rem; display: block; margin-bottom: 10px; }
+        .pillar-item strong {
+            display: block;
+            color: var(--primary-brown);
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .pillar-item p { font-size: 13px; color: #666; line-height: 1.6; margin: 0; }
+
+        @media (max-width: 640px) {
+            .desc-pillars { grid-template-columns: 1fr; }
+            .desc-block { padding: 20px 18px; }
+        }
+    </style>
 </body>
 </html>

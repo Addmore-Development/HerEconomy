@@ -19,7 +19,7 @@
         <a href="../index.html" class="header-logo-link">
             <img src="../images/2026/02/her-economy-logo-new.png" alt="The Her Economy" />
         </a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">&#9776;</button>
         <nav class="nav-menu" id="navMenu">
             <a href="../index.html">HOME</a>
             <a href="about.html">ABOUT HER ECONOMY</a>
@@ -38,32 +38,83 @@
                 Her Economy. Our speakers bring together a wealth of experience from diverse sectors to discuss
                 growth strategies, sustainable investment, and the industrial landscape of the Gauteng City Region.</p>
             </div>
+
             <h2 class="section-heading">Key Note Speakers</h2>
             <div class="speakers-grid">
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Speaker announcement - Xoli.jpeg" alt="Xoli Madlala" />
+                    </div>
+                    <p class="speaker-name">Xoli Madlala</p>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Mam Geraldine.jpeg" alt="Geraldine Joslyn Fraser-Moleki" />
+                    </div>
+                    <p class="speaker-name">Geraldine Joslyn Fraser-Moleki</p>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Speaker announcement - Sibahle.jpeg" alt="Sibahle Magadla" />
+                    </div>
+                    <p class="speaker-name">Sibahle Magadla</p>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Speaker announcement - Prof Tinuade Ojo.jpeg" alt="Prof Tinuade Adekunbi Ojo" />
+                    </div>
+                    <p class="speaker-name">Prof Tinuade Adekunbi Ojo</p>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Speaker Announcement - Luthando.jpeg" alt="Luthando Madlopa" />
+                    </div>
+                    <p class="speaker-name">Luthando Madlopa</p>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Speaker Announcement - Dudu Makhari.jpeg" alt="Dr Dudu Makhari" />
+                    </div>
+                    <p class="speaker-name">Dr Dudu Makhari</p>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Speaker Announcement - Dr Joshua.jpeg" alt="Dr Joshua Oludare Awesome" />
+                    </div>
+                    <p class="speaker-name">Dr Joshua Oludare Awesome</p>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Lynette.jpeg" alt="Lynette Maja" />
+                    </div>
+                    <p class="speaker-name">Lynette Maja</p>
+                </div>
+
+                <div class="speaker-card">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Speaker Announcement - Ambassador Ruby.jpeg" alt="Ambassador Ruby Marks" />
+                    </div>
+                    <p class="speaker-name">Ambassador Ruby Marks</p>
+                </div>
+
             </div>
         </section>
 
-        <section class="speakers-section">
-            <h2 class="section-heading">Panelist</h2>
-            <div class="speakers-grid">
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-                <div class="speaker-card"><div class="speaker-photo"></div><p class="speaker-name">Name Surname</p></div>
-            </div>
-        </section>
+    <div class="lightbox-overlay" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <span class="lightbox-prev" id="lightboxPrev">&#8249;</span>
+    <img src="" alt="" id="lightboxImg" />
+    <span class="lightbox-next" id="lightboxNext">&#8250;</span>
+</div>
+
     </main>
 
     <footer class="site-footer">
@@ -82,6 +133,18 @@
             </div>
         </div>
     </footer>
+
+    <style>
+    /* Ensure speaker photos fill the card container correctly */
+    .speaker-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        display: block;
+        border-radius: inherit;
+    }
+    </style>
 
     <script src="../js/script.js"></script>
 </body>

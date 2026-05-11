@@ -210,6 +210,12 @@ function initMarquee() {
         { src: 'images/2025/02/mogale.png',                  alt: 'Mogale' },
         { src: 'images/2025/02/bus.png',                     alt: 'Business Partner' },
         { src: 'images/2025/02/VodacomLogo1-300x141.jpg',   alt: 'Vodacom' },
+        { src: 'images/Partners/14858 ABSIP Woman In Focus LOGO rectangle 1 colour.jpg', alt: 'ABSIP Woman In Focus' },
+        { src: 'images/Partners/FASSET.jpeg',                                             alt: 'FASSET' },
+        { src: 'images/Partners/GMTlogos3.jpg',                                           alt: 'GMT' },
+        { src: 'images/Partners/liberty.png',                                             alt: 'Liberty' },
+        { src: 'images/Partners/LOCKUP_col_white_EN.png',                                alt: 'Lockup' },
+        { src: 'images/Partners/Logo Women,youth & persons with disabilities CMYK-01.jpg', alt: 'Women, Youth & Persons with Disabilities' },
     ];
 
     function buildCards(list) {
@@ -286,4 +292,59 @@ document.addEventListener('DOMContentLoaded', function () {
     initMarquee();
     initBgVideo();
     initTicketForm();
+    initSpeakerLightbox();
 });
+
+function initSpeakerLightbox() {
+    const speakerImgs = document.querySelectorAll('.speaker-photo img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+    if (!speakerImgs.length || !lightbox) return;
+
+    let currentIndex = 0;
+    const imgs = Array.from(speakerImgs);
+
+    function openLightbox(index) {
+        currentIndex = index;
+        lightboxImg.src = imgs[currentIndex].src;
+        lightboxImg.alt = imgs[currentIndex].alt;
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    imgs.forEach(function (img, i) {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function () { openLightbox(i); });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxPrev.addEventListener('click', function (e) {
+        e.stopPropagation();
+        currentIndex = (currentIndex - 1 + imgs.length) % imgs.length;
+        lightboxImg.src = imgs[currentIndex].src;
+        lightboxImg.alt = imgs[currentIndex].alt;
+    });
+    lightboxNext.addEventListener('click', function (e) {
+        e.stopPropagation();
+        currentIndex = (currentIndex + 1) % imgs.length;
+        lightboxImg.src = imgs[currentIndex].src;
+        lightboxImg.alt = imgs[currentIndex].alt;
+    });
+    lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (!lightbox.classList.contains('open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') lightboxPrev.click();
+        if (e.key === 'ArrowRight') lightboxNext.click();
+    });
+}

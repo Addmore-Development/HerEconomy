@@ -721,7 +721,7 @@ img { display: block; max-width: 100%; height: auto; }
     display: flex;
     gap: 20px;
     width: max-content;
-    animation: marqueeScroll 35s linear infinite;
+    animation: marqueeScroll 80s linear infinite;
 }
 
 .marquee-track:hover { animation-play-state: paused; }
@@ -822,13 +822,14 @@ img { display: block; max-width: 100%; height: auto; }
 .speaker-card { text-align: center; background: transparent; }
 .speaker-photo {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    height: auto;
+    aspect-ratio: unset;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     overflow: hidden;
 }
-.speaker-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.speaker-photo img { width: 100%; height: auto; object-fit: contain; display: block; }
 .speaker-name { margin-top: 10px; font-size: 14px; font-weight: 500; color: var(--text-dark); }
 
 /* ============================================================
@@ -841,6 +842,11 @@ img { display: block; max-width: 100%; height: auto; }
     gap: 0;
     padding: 28px 40px 0;
     border-bottom: 1px solid #e0e0e0;
+}
+.logo-card img[src*="LOCKUP_col_white_EN"] {
+    background: #222;
+    border-radius: 4px;
+    padding: 6px;
 }
 
 .gallery-filter button {
