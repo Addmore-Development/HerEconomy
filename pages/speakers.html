@@ -26,7 +26,7 @@
             <a href="stakeholders.html">STAKEHOLDERS</a>
             <a href="speakers.html" class="active">SPEAKERS</a>
             <a href="gallery.html">GALLERY</a>
-            <a href="ticket.html" class="btn-buy">BUY TICKET</a>
+            <a href="https://www.quicket.co.za/events/356830-her-economy-2026/" class="btn-buy">BUY TICKET</a>
         </nav>
     </header>
 
@@ -39,7 +39,30 @@
                 growth strategies, sustainable investment, and the industrial landscape of the Gauteng City Region.</p>
             </div>
 
-            <h2 class="section-heading">Key Note Speakers</h2>
+            <!-- KEYNOTE SPEAKERS -->
+            <h2 class="section-heading">Keynote Speakers</h2>
+            <div class="speakers-grid speakers-grid--keynote">
+
+                <div class="speaker-card speaker-card--keynote">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Mam Geraldine.jpeg" alt="Geraldine Joslyn Fraser-Moleki" />
+                    </div>
+                    <p class="speaker-name">Geraldine Joslyn Fraser-Moleki</p>
+                    <span class="speaker-badge">Keynote Speaker</span>
+                </div>
+
+                <div class="speaker-card speaker-card--keynote">
+                    <div class="speaker-photo">
+                        <img src="../images/Speakers/Lynette.jpeg" alt="Lynette Maja" />
+                    </div>
+                    <p class="speaker-name">Lynette Maja</p>
+                    <span class="speaker-badge">Keynote Speaker</span>
+                </div>
+
+            </div>
+
+            <!-- PANELISTS -->
+            <h2 class="section-heading">Panelists</h2>
             <div class="speakers-grid">
 
                 <div class="speaker-card">
@@ -47,13 +70,7 @@
                         <img src="../images/Speakers/Speaker announcement - Xoli.jpeg" alt="Xoli Madlala" />
                     </div>
                     <p class="speaker-name">Xoli Madlala</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="speaker-photo">
-                        <img src="../images/Speakers/Mam Geraldine.jpeg" alt="Geraldine Joslyn Fraser-Moleki" />
-                    </div>
-                    <p class="speaker-name">Geraldine Joslyn Fraser-Moleki</p>
+                    <span class="speaker-badge speaker-badge--panelist">Panelist</span>
                 </div>
 
                 <div class="speaker-card">
@@ -61,6 +78,7 @@
                         <img src="../images/Speakers/Speaker announcement - Sibahle.jpeg" alt="Sibahle Magadla" />
                     </div>
                     <p class="speaker-name">Sibahle Magadla</p>
+                    <span class="speaker-badge speaker-badge--panelist">Panelist</span>
                 </div>
 
                 <div class="speaker-card">
@@ -68,6 +86,7 @@
                         <img src="../images/Speakers/Speaker announcement - Prof Tinuade Ojo.jpeg" alt="Prof Tinuade Adekunbi Ojo" />
                     </div>
                     <p class="speaker-name">Prof Tinuade Adekunbi Ojo</p>
+                    <span class="speaker-badge speaker-badge--panelist">Panelist</span>
                 </div>
 
                 <div class="speaker-card">
@@ -75,6 +94,7 @@
                         <img src="../images/Speakers/Speaker Announcement - Luthando.jpeg" alt="Luthando Madlopa" />
                     </div>
                     <p class="speaker-name">Luthando Madlopa</p>
+                    <span class="speaker-badge speaker-badge--panelist">Panelist</span>
                 </div>
 
                 <div class="speaker-card">
@@ -82,6 +102,7 @@
                         <img src="../images/Speakers/Speaker Announcement - Dudu Makhari.jpeg" alt="Dr Dudu Makhari" />
                     </div>
                     <p class="speaker-name">Dr Dudu Makhari</p>
+                    <span class="speaker-badge speaker-badge--panelist">Panelist</span>
                 </div>
 
                 <div class="speaker-card">
@@ -89,13 +110,7 @@
                         <img src="../images/Speakers/Speaker Announcement - Dr Joshua.jpeg" alt="Dr Joshua Oludare Awesome" />
                     </div>
                     <p class="speaker-name">Dr Joshua Oludare Awesome</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="speaker-photo">
-                        <img src="../images/Speakers/Lynette.jpeg" alt="Lynette Maja" />
-                    </div>
-                    <p class="speaker-name">Lynette Maja</p>
+                    <span class="speaker-badge speaker-badge--panelist">Panelist</span>
                 </div>
 
                 <div class="speaker-card">
@@ -103,17 +118,18 @@
                         <img src="../images/Speakers/Speaker Announcement - Ambassador Ruby.jpeg" alt="Ambassador Ruby Marks" />
                     </div>
                     <p class="speaker-name">Ambassador Ruby Marks</p>
+                    <span class="speaker-badge speaker-badge--panelist">Panelist</span>
                 </div>
 
             </div>
         </section>
 
-    <div class="lightbox-overlay" id="lightbox">
-    <span class="lightbox-close" id="lightboxClose">&times;</span>
-    <span class="lightbox-prev" id="lightboxPrev">&#8249;</span>
-    <img src="" alt="" id="lightboxImg" />
-    <span class="lightbox-next" id="lightboxNext">&#8250;</span>
-</div>
+        <div class="lightbox-overlay" id="lightbox">
+            <span class="lightbox-close" id="lightboxClose">&times;</span>
+            <span class="lightbox-prev" id="lightboxPrev">&#8249;</span>
+            <img src="" alt="" id="lightboxImg" />
+            <span class="lightbox-next" id="lightboxNext">&#8250;</span>
+        </div>
 
     </main>
 
@@ -143,6 +159,38 @@
         object-position: top center;
         display: block;
         border-radius: inherit;
+    }
+
+    /* Keynote grid — 2 centered cards, larger than panelists */
+    .speakers-grid--keynote {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+    }
+
+    .speaker-card--keynote .speaker-photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Badge styles */
+    .speaker-badge {
+        display: inline-block;
+        margin-top: 0.4rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        background-color: #b5860d;
+        color: #fff;
+    }
+
+    .speaker-badge--panelist {
+        background-color: #555;
     }
     </style>
 
